@@ -16,7 +16,7 @@ public class QuoteWebClient {
     private String port;
     private String path;
 
-    Flux<Quote> getQuoteStream() {
+    public Flux<Quote> getQuoteStream() {
         String baseUrl = "http://" + host + ":" + port;
 
         return WebClient.builder()
